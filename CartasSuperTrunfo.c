@@ -13,7 +13,7 @@ int main() {
   float area1, area2;
   float pib1, pib2;
   int pontosTuristicos1, pontosTuristicos2;
-
+  
   // Área para entrada de dados
 
   
