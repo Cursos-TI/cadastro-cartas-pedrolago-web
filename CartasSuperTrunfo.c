@@ -18,4 +18,8 @@ int main() {
   printf ("Carta 1 \n");
   printf ("Estado (A-H)":);
   scanf ("%s", estado1)
+
+  printf ("Código")
+  scanf("%s",codigo1)
   
+  printf ("Cidade:")
