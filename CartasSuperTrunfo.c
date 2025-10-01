@@ -15,5 +15,7 @@ int main() {
   int pontosTuristicos1, pontosTuristicos2;
   
   // Área para entrada de dados
-
+  printf ("Carta 1 \n");
+  printf ("Estado (A-H)":);
+  scanf ("%s", estado1)
   
