@@ -16,7 +16,7 @@ int main() {
   
   // Área para entrada de dados
   printf("Carta 1 \n");
-  printf("Estado (A-H)":);
+  printf("Estado (A-H)");
   scanf("%s", estado1);
 
   printf("Código");
