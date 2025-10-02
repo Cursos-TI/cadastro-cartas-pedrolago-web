@@ -38,4 +38,26 @@ int main() {
   printf("Numero de Pontos Turisticos: ");
   scanf("%d", &pontosTuristicos1);
 
+  printf("Carta 2 \n");
+  printf("Estado (A-H)");
+  scanf("%c", estado2);
+
+  printf("Código");
+  scanf("%s",codigo2);
+
+  
+  printf("Cidade:");
+  scanf("%[^\n]",nomeCidade2);
+
+   printf("Populacao: ");
+  scanf("%d", &populacao2);
+
+    printf("Area (km2): ");
+  scanf("%f", &area2);
+
+  printf("PIB (em bilhoes): ");
+  scanf("%f", &pib2);
+
+  printf("Numero de Pontos Turisticos: ");
+  scanf("%d", &pontosTuristicos2);
 
