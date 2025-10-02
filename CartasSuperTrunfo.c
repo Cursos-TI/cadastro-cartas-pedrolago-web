@@ -20,7 +20,7 @@ int main() {
     scanf(" %c", &estado1);  
 
     printf("Codigo: ");
-    scanf("%s", codigo1);
+    scanf("%c", codigo1);
 
     printf("Cidade: ");
     getchar();  
