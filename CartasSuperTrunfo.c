@@ -20,27 +20,27 @@ int main() {
     scanf(" %c", &estado1);  
 
     printf("Codigo: ");
-    scanf("%c", codigo1);
+    scanf(" %c", codigo1);
 
     printf("Cidade: ");
     getchar();  
-    scanf("%[^\n]", nomeCidade1);
+    scanf(" %c", nomeCidade1);
 
     printf("Populacao: ");
     getchar();
-    scanf("%d", &populacao1);
+    scanf(" %i", &populacao1);
 
     printf("Area (km2): ");
     getchar();
-    scanf("%f", &area1);
+    scanf(" %f", &area1);
 
     printf("PIB (em bilhoes): ");
     getchar();
-    scanf("%f", &pib1);
+    scanf(" %f", &pib1);
 
     printf("Numero de Pontos Turisticos: ");
     getchar();
-    scanf("%d", &pontosTuristicos1);
+    scanf(" %d", &pontosTuristicos1);
 
     // Área para entrada de dados - Carta 2
     printf("\nCarta 2 \n");
