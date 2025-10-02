@@ -21,12 +21,12 @@ int main() {
 
     printf("Codigo: ");
     scanf("%3s", codigo1);
+    getchar(); // Limpa o \n do buffer
 
-    // Limpar o buffer antes de ler a string com espaços
-    while (getchar() != '\n');  // Limpa todo o buffer até a quebra de linha
-    
     printf("Cidade: ");
-    scanf("%[^\n]", nomeCidade1);
+    fgets(nomeCidade1, 50, stdin);
+    // Remove o \n do final da string lida pelo fgets
+    nomeCidade1[strcspn(nomeCidade1, "\n")] = 0;
 
     printf("Populacao: ");
     scanf("%d", &populacao1);
@@ -40,8 +40,7 @@ int main() {
     printf("Numero de Pontos Turisticos: ");
     scanf("%d", &pontosTuristicos1);
 
-    // Limpar o buffer antes da segunda carta
-    while (getchar() != '\n');  // Limpa todo o buffer
+    getchar(); // Limpa o \n do buffer antes da segunda carta
 
     // Área para entrada de dados - Carta 2
     printf("Carta 2 \n");
@@ -50,12 +49,12 @@ int main() {
 
     printf("Codigo: ");
     scanf("%3s", codigo2);
+    getchar(); // Limpa o \n do buffer
 
-    // Limpar o buffer antes de ler a string com espaços
-    while (getchar() != '\n');  // Limpa todo o buffer até a quebra de linha
-    
     printf("Cidade: ");
-    scanf("%[^\n]", nomeCidade2);
+    fgets(nomeCidade2, 50, stdin);
+    // Remove o \n do final da string lida pelo fgets
+    nomeCidade2[strcspn(nomeCidade2, "\n")] = 0;
 
     printf("Populacao: ");
     scanf("%d", &populacao2);
