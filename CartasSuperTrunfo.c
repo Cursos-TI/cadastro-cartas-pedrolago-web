@@ -15,11 +15,26 @@ int main() {
   int pontosTuristicos1, pontosTuristicos2;
   
   // Área para entrada de dados
-  printf ("Carta 1 \n");
-  printf ("Estado (A-H)":);
-  scanf ("%s", estado1)
+  printf("Carta 1 \n");
+  printf("Estado (A-H)":);
+  scanf("%s", estado1);
 
-  printf ("Código")
-  scanf("%s",codigo1)
-  
-  printf ("Cidade:")
+  printf("Código");
+  scanf("%s",codigo1);
+
+  printf("Cidade:");
+  scanf("%[^\n]",nomeCidade1);
+
+   printf("Populacao: ");
+  scanf("%d", &populacao1);
+
+  printf("Area (km2): ");
+  scanf("%f", &area1);
+
+  printf("PIB (em bilhoes): ");
+  scanf("%f", &pib1);
+
+  printf("Numero de Pontos Turisticos: ");
+  scanf("%d", &pontosTuristicos1);
+
+
