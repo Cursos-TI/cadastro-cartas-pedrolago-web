@@ -22,6 +22,7 @@ int main() {
   printf("Código");
   scanf("%s",codigo1);
 
+  
   printf("Cidade:");
   scanf("%[^\n]",nomeCidade1);
 
