@@ -17,14 +17,13 @@ int main() {
     // Área para entrada de dados - Carta 1
     printf("Carta 1 \n");
     printf("Estado (A-H): ");
-    scanf(" %c", &estado1);  
+    scanf(" %c", &estado1);
 
     printf("Codigo: ");
-    scanf("%s", codigo1);
+    scanf("%3s", codigo1);
 
     printf("Cidade: ");
-    getchar();  
-    scanf("%[^\n]", nomeCidade1);
+    scanf(" %[^\n]", nomeCidade1);
 
     printf("Populacao: ");
     scanf("%d", &populacao1);
@@ -39,31 +38,26 @@ int main() {
     scanf("%d", &pontosTuristicos1);
 
     // Área para entrada de dados - Carta 2
-    printf("\nCarta 2 \n");
+    printf("Carta 2 \n");
     printf("Estado (A-H): ");
-    scanf(" %c", &estado2);  
+    scanf(" %c", &estado2);
 
     printf("Codigo: ");
-    scanf("%s", codigo2);
+    scanf("%3s", codigo2);
 
     printf("Cidade: ");
-    getchar();  
-    scanf("%[^\n]", nomeCidade2);
+    scanf(" %[^\n]", nomeCidade2);
 
     printf("Populacao: ");
-    getchar();
     scanf("%d", &populacao2);
 
     printf("Area (km2): ");
-    getchar();
     scanf("%f", &area2);
 
     printf("PIB (em bilhoes): ");
-    getchar();
     scanf("%f", &pib2);
 
     printf("Numero de Pontos Turisticos: ");
-    getchar();
     scanf("%d", &pontosTuristicos2);
 
     // Área para exibição dos dados da cidade
