@@ -17,13 +17,13 @@ int main() {
     // Área para entrada de dados - Carta 1
     printf("Carta 1 \n");
     printf("Estado (A-H): ");
-    scanf(" %c", &estado1);  // Espaço antes do %c para consumir quebra de linha
+    scanf(" %c", &estado1);  
 
     printf("Codigo: ");
     scanf("%s", codigo1);
 
     printf("Cidade: ");
-    getchar();  // Consumir o \n deixado pelo scanf anterior
+    getchar();  
     scanf("%[^\n]", nomeCidade1);
 
     printf("Populacao: ");
@@ -41,13 +41,13 @@ int main() {
     // Área para entrada de dados - Carta 2
     printf("\nCarta 2 \n");
     printf("Estado (A-H): ");
-    scanf(" %c", &estado2);  // Espaço antes do %c para consumir quebra de linha
+    scanf(" %c", &estado2);  
 
     printf("Codigo: ");
     scanf("%s", codigo2);
 
     printf("Cidade: ");
-    getchar();  // Consumir o \n deixado pelo scanf anterior
+    getchar();  
     scanf("%[^\n]", nomeCidade2);
 
     printf("Populacao: ");
