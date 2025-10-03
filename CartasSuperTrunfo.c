@@ -28,50 +28,44 @@ int main() {
     
   // Área para entrada de dados
 
-    printf("=== SUPER TRUNFO  ===\n");
-    
-    printf("--- CARTA 1 ---\n");
+
+    printf("--- CARTA 1: ---\n");
     
     printf("Estado (A-H): ");
     scanf(" %c", &estado1);
     printf("\n");
     
-    // Código
-    printf("Código da Carta (ex: %c01): ", estado1);
+ 
+    printf("Código da Carta 1 (ex: %c01): ", estado1);
     scanf("%3s", codigo1);
     printf("\n");
     
-    // Nome da Cidade
+
     printf("Nome da Cidade: ");
-    getchar(); // Limpa o buffer
+    getchar(); 
     fgets(nomeCidade1, 50, stdin);
     nomeCidade1[strcspn(nomeCidade1, "\n")] = 0; // Remove o \n
     printf("\n");
     
-    // População
     printf("População: ");
     scanf("%d", &populacao1);
     printf("\n");
     
-    // Área
     printf("Área (km²): ");
     scanf("%f", &area1);
     printf("\n");
     
-    // PIB
     printf("PIB (em bilhões de reais): ");
     scanf("%f", &pib1);
     printf("\n");
     
-    // Pontos Turísticos
     printf("Número de Pontos Turísticos: ");
     scanf("%d", &pontosTuristicos1);
     printf("\n");
     
-    getchar(); // Limpa o buffer para a próxima carta
+    getchar(); 
     
-    // ========== CARTA 2 ==========
-    printf("--- CARTA 2 ---\n");
+    printf("--- CARTA 2: ---\n");
     
     // Estado
     printf("Estado (A-H): ");
@@ -79,7 +73,7 @@ int main() {
     printf("\n");
     
     // Código
-    printf("Código da Carta (ex: %c01): ", estado2);
+    printf("Código da Carta 2 (ex: %c01): ", estado2);
     scanf("%3s", codigo2);
     printf("\n");
     
@@ -111,9 +105,7 @@ int main() {
     printf("\n");
     
     // Área para exibição dos dados da cidade
-    printf("=== CARTAS CADASTRADAS ===\n\n");
-    
-    // Carta 1
+     
     printf("Carta 1:\n");
     printf("Estado: %c\n", estado1);
     printf("Código: %s\n", codigo1);
@@ -124,7 +116,6 @@ int main() {
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos1);
     printf("\n");
     
-    // Carta 2
     printf("Carta 2:\n");
     printf("Estado: %c\n", estado2);
     printf("Código: %s\n", codigo2);
@@ -134,8 +125,6 @@ int main() {
     printf("PIB: %.2f bilhões de reais\n", pib2);
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2);
     printf("\n");
-    
-    printf("=== FIM DO CADASTRO ===\n");
     
     return 0;
 }  
