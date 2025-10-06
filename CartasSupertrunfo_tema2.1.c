@@ -15,7 +15,7 @@ int main() {
     int populacao1;
     float area1;
     float pib1;
-    int pontos1
+    int pontos1;  // CORREÇÃO: Adicionado ponto e vírgula
     
     // Carta 2
     char estado2;
@@ -26,9 +26,7 @@ int main() {
     float pib2;
     int pontos2;
     
-  // Área para entrada de dados
-
-
+    // Área para entrada de dados
     printf("--- CARTA 1: ---\n");
 
     printf("Digite o estado da carta 1: ");
@@ -36,7 +34,7 @@ int main() {
     printf("Digite o código da carta 1: ");
     scanf("%s", codigo1);
     printf("Digite o nome da cidade da carta 1: ");
-    scanf(" %[^\n]s", cidade1);
+    scanf(" %[^\n]", cidade1);  // CORREÇÃO: Removido o 's' no final
     printf("Digite a população da carta 1: ");
     scanf("%d", &populacao1);
     printf("Digite a área da carta 1: ");
@@ -46,12 +44,13 @@ int main() {
     printf("Digite o número de pontos turísticos da carta 1: ");
     scanf("%d", &pontos1);
     
-    printf("\nDigite o estado da carta 2: ");
+    printf("\n--- CARTA 2: ---\n");  // CORREÇÃO: Adicionado título para organização
+    printf("Digite o estado da carta 2: ");
     scanf(" %c", &estado2);
     printf("Digite o código da carta 2: ");
     scanf("%s", codigo2);
     printf("Digite o nome da cidade da carta 2: ");
-    scanf(" %[^\n]s", cidade2);
+    scanf(" %[^\n]", cidade2);  // CORREÇÃO: Removido o 's' no final
     printf("Digite a população da carta 2: ");
     scanf("%d", &populacao2);
     printf("Digite a área da carta 2: ");
@@ -60,21 +59,18 @@ int main() {
     scanf("%f", &pib2);
     printf("Digite o número de pontos turísticos da carta 2: ");
     scanf("%d", &pontos2);
-    printf("Estado (A-H): ");
-    scanf(" %c", &estado1);
-    printf("\n");
+    // CORREÇÃO: Removidas as linhas redundantes de leitura do estado1
     
-     // Área para cálculos
-
+    // Área para cálculos
     float densidade1 = populacao1 / area1;
     float pib_per_capita1 = (pib1 * 1000000000) / populacao1;
-    
     
     float densidade2 = populacao2 / area2;
     float pib_per_capita2 = (pib2 * 1000000000) / populacao2;
 
     // Área para exibição dos dados
     
+    printf("\n--- RESULTADOS ---\n");
     printf("\nCarta 1:\n");
     printf("Estado: %c\n", estado1);
     printf("Código: %s\n", codigo1);
